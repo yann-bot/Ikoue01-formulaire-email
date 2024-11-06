@@ -39,7 +39,7 @@ const Transporter = nodemailer.createTransport({
     }
 })
 
-// Route pour envoyer l'email
+//Route pour envoyer l'email
 app.post('/envoi-mail', (req, res) => {
     const {nom,email,message} = req.body
    
@@ -56,7 +56,7 @@ app.post('/envoi-mail', (req, res) => {
             res.send(`Erreur lors de l'envoi du mail`);
         }else{
             console.log('Email capturé par le serveur mail:' + info.response )
-            res.send('Email capturé avec succès')
+            res.send('Votre mail a bien été renvoyé')
         }
     })
 })
