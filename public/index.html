@@ -1,0 +1,52 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page web</title>
+    <style>
+        form{
+           
+            width: fit-content;
+            padding: 10px;
+            margin-right: auto;
+            margin-left:auto;
+            margin-top: 200px;
+            box-shadow: 2px 2px 5px rgb(71, 70, 70);
+        }
+        input {
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-style:dashed;
+            border-width: 1px;
+            padding: 5px;
+            box-shadow: 2px 2px 5px rgb(201, 198, 198);
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        button{
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius:5px;
+            border-color:rgb(246, 242, 242);
+            color: rgb(11, 10, 10);
+            
+        }
+        textarea{
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+    </style>
+</head>
+<body>
+   <form action="/envoi-mail" method="post">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+   </form>
+</body>
+</html>
